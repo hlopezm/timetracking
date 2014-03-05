@@ -7,6 +7,10 @@
 		<%= entry.hours %> h
 		<%= entry.minutes %> m -
 		<%= entry.date %>
-	</li>
-	<% end %>
+    </li>
+
+    
+  <% end %>
 </ul>
+ <p> <%= pluralize(@project.hours_worked(Date.today.month, Date.today.year), 'hour', 'hours') %> </p>
+
